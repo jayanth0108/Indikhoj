@@ -216,7 +216,7 @@
     .hero {
       position: relative;
       background-color: var(--bark-deep);
-      background-image: url('sarees.jpeg');
+      background-image: none;
       background-size: cover;
       background-position: center 65%;
       /* perfectly positions the woman and saree if using the vertical photo */
@@ -536,12 +536,12 @@
     ───────────────────────────────────────── */
     .product-hero {
       position: relative;
-      height: 38vh;
-      min-height: 260px;
+      height: 85vh;
+      min-height: 500px;
       background-color: var(--bark-deep);
-      background-image: url('weaving.jpeg');
+      background-image: none;
       background-size: cover;
-      background-position: center 15%;
+      background-position: center 25%;
       /* Focus on the weaver's face in the upper part of the photo */
       overflow: hidden;
     }
@@ -1462,25 +1462,7 @@
 
       <div class="divider"></div>
 
-      <!-- Artisan -->
-      <div class="section-label">The Artisan</div>
-      <div class="artisan-card">
-        <div class="artisan-avatar">👨‍🎨</div>
-        <div class="artisan-info">
-          <h3 id="artisanName">Ramesh Vankar</h3>
-          <p>
-            Master weaver with <strong style="color:var(--clay-light);" id="artisanYears">32 years</strong> of experience.<br />
-            <span id="artisanDesc">Member of Khamir Craft Resource Centre, Kutch.</span>
-          </p>
-        </div>
-      </div>
-      <p id="artisanStory" style="font-size:0.83rem;color:var(--text-light);line-height:1.7;margin:12px 0;">
-        Ramesh learned the ancient art of Kala Cotton weaving from his father, continuing a family tradition
-        spanning five generations. Each stole he creates is made using traditional pit looms and natural
-        indigo-based dyes, without any chemical inputs.
-      </p>
 
-      <div class="divider"></div>
 
       <!-- Sustainability -->
       <div class="sustain-block">
@@ -1544,56 +1526,54 @@
       </div>
 
       <p style="font-size:0.78rem;color:var(--text-light);margin-top:12px;text-align:center;">
-        Filmed on-site at Ramesh's workshop in Bhujodi village, Kutch.
+        Filmed on-site at a traditional block printing workshop in Rajasthan.
       </p>
     </div>
 
     <!-- Stages -->
     <div class="stages-section">
-      <h3 class="stages-title">The Journey of a Thread</h3>
+      <h3 class="stages-title">The Journey of a Pattern</h3>
       <div class="stages-list">
         <div class="stage-item">
           <div class="stage-dot"></div>
           <div class="stage-content">
-            <h4>1. Cotton Picking</h4>
-            <p>Kala Cotton is hand-picked from rain-fed fields in the arid Rann of Kutch during November–December.</p>
+            <h4>1. Wood Carving</h4>
+            <p>Master artisans hand-carve intricate motifs into blocks of teak or sheesham wood, a skill taking years to perfect.</p>
           </div>
         </div>
         <div class="stage-item">
           <div class="stage-dot"></div>
           <div class="stage-content">
-            <h4>2. Hand Spinning (Charkha)</h4>
-            <p>Raw cotton is cleaned and spun into fine thread using a traditional charkha wheel — entirely by hand.</p>
+            <h4>2. Fabric Preparation</h4>
+            <p>Cotton fabric is thoroughly washed, bleached, and treated with natural mordants to ensure dyes bind perfectly.</p>
           </div>
         </div>
         <div class="stage-item">
           <div class="stage-dot"></div>
           <div class="stage-content">
-            <h4>3. Natural Dyeing</h4>
-            <p>Threads are dyed using plant-based pigments: indigo, turmeric, and iron mordants from local sources.</p>
+            <h4>3. Color Mixing</h4>
+            <p>Natural dyes and pigments are prepared in small batches and spread evenly across wooden dye trays.</p>
           </div>
         </div>
         <div class="stage-item">
           <div class="stage-dot"></div>
           <div class="stage-content">
-            <h4>4. Warping the Loom</h4>
-            <p>Dyed warp threads are carefully wound and mounted onto the pit loom — a process taking 2–3 hours alone.
-            </p>
+            <h4>4. Block Stamping</h4>
+            <p>The artisan rhythmically stamps the carved block onto the stretched fabric, relying purely on muscle memory for structural alignment.</p>
           </div>
         </div>
         <div class="stage-item">
           <div class="stage-dot"></div>
           <div class="stage-content">
-            <h4>5. Weaving</h4>
-            <p>The artisan weaves row by row — each stole takes 12–18 hours of continuous weaving to complete.</p>
+            <h4>5. Layering Colors</h4>
+            <p>Complex designs require multiple custom blocks, layering different colors over each other with pinpoint precision.</p>
           </div>
         </div>
         <div class="stage-item">
           <div class="stage-dot"></div>
           <div class="stage-content">
-            <h4>6. Finishing</h4>
-            <p>The finished fabric is sun-dried, checked for quality, and hand-frilled or hemmed before it reaches you.
-            </p>
+            <h4>6. Curing & Washing</h4>
+            <p>The printed fabric is sun-dried to set the colors, then washed repeatedly to remove excess dye before final pressing.</p>
           </div>
         </div>
       </div>
@@ -1798,7 +1778,7 @@
           { icon: '♻️', text: 'Zero synthetic inputs. Fully <strong>biodegradable</strong> at end of life.' },
           { icon: '🤝', text: 'Purchase directly supports the weaver\'s family — <strong>no middlemen</strong> in this supply chain.' }
         ],
-        heroImg: 'weaving.jpeg',
+        heroImg: '',
         simData: {
           rate: '~2,400 rows',
           length: '200cm',
@@ -1837,7 +1817,7 @@
           { icon: '♻️', text: 'Gentle on skin and strictly <strong>biodegradable</strong>.' },
           { icon: '🤝', text: 'Fosters economic independence for rural weaving clusters.' }
         ],
-        heroImg: 'sarees.jpeg',
+        heroImg: '',
         simData: {
           rate: '~2,000 rows',
           length: '5.5m',
@@ -1871,7 +1851,7 @@
           { icon: '♻️', text: 'A completely analog, carbon-neutral creative process.' },
           { icon: '🤝', text: 'Preserves an intangible cultural heritage.' }
         ],
-        heroImg: 'weaving.jpeg',
+        heroImg: 'brand3.jpg',
         simData: {
           rate: '~800 stamps',
           length: '5m',
@@ -1905,7 +1885,7 @@
           { icon: '♻️', text: 'Highly durable and completely <strong>biodegradable</strong>.' },
           { icon: '🤝', text: 'Directly supports weaving clusters in rural Karnataka.' }
         ],
-        heroImg: 'sarees.jpeg',
+        heroImg: '',
         simData: {
           rate: '~1,500 rows',
           length: '6m',
@@ -1929,10 +1909,7 @@
       document.getElementById('prodRegion').innerText = data.region;
       document.getElementById('prodWeaveTime').innerText = data.weaveTime;
       document.getElementById('prodWidth').innerText = data.width;
-      document.getElementById('artisanName').innerText = data.artisanName;
-      document.getElementById('artisanYears').innerText = data.artisanYears;
-      document.getElementById('artisanDesc').innerText = data.artisanDesc;
-      document.getElementById('artisanStory').innerText = data.artisanStory;
+
       
       const chipsHtml = data.chips.map((c, i) => `<span class="chip ${i === 0 ? 'chip-clay' : 'chip-sage'}">${c}</span>`).join('');
       document.getElementById('prodChips').innerHTML = chipsHtml;
